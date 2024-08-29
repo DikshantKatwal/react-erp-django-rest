@@ -1,0 +1,109 @@
+.notification-item:not(:last-of-type) {
+    border-bottom: 1px solid #eaeaea;
+}
+.common-notification-container .notification-item:nth-of-type(1) .block-container {
+    padding-top: 0;
+}
+.common-notification-container .notification-item.type-last .block-container {
+    padding: 21px 0 0 0;
+    justify-content: center;
+}
+.common-notification-container .notification-item.type-last .block-container .block-item:nth-of-type(1) {
+    padding-left: 0;
+}
+.common-notification-container .notification-item.type-last .block-container .block-item:nth-of-type(1):after {
+    display: none;
+}
+.common-notification-container .notification-item.type-seen .block-container .block-item:nth-of-type(1):after {
+    background-color: #878e9a;
+}
+.common-notification-container .notification-item .block-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+.common-notification-container .notification-item .block-container .block-item {
+    position: relative;
+}
+.common-notification-container .notification-item .block-container .block-item:nth-of-type(1) {
+    padding-left: 20px;
+}
+.common-notification-container .notification-item .block-container .block-item:nth-of-type(1):after {
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background-color: #50cd8a;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+.common-notification-container .notification-item .block-container .block-item .message {
+    margin-bottom: 4px;
+}
+.common-notification-container .notification-item .block-container .block-item .message p {
+    font-size: 13px;
+}
+.common-notification-container .notification-item .block-container .block-item .date p {
+    font-size: 11px;
+    line-height: 1em;
+    color: #878e9a;
+}
+.common-notification-container .notification-item .block-container .block-item .action a {
+    font-size: 18px;
+    color: #7E7E7E;
+    transition: all 0.4s ease;
+}
+.common-notification-container .notification-item .block-container .block-item .action a:hover {
+    color: #363e4a;
+    transition: all 0.4s ease;
+}
+.common-notification-container.type-header .notification-item .block-container {
+    padding: 20px 15px;
+    margin: 0;
+}
+.common-notification-container.type-header .notification-item .block-container .block-item:nth-of-type(1) {
+    width: 100%;
+    padding-right: 0;
+}
+.common-notification-container.type-header .notification-item .block-container .block-item:nth-of-type(1):after {
+    top: 4px;
+}
+.common-layout-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.message{
+    width:70%;
+}
+.block-container{
+    
+}
+.block-item{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.image-col {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional, if you want to center the image horizontally as well */
+}
+
+.image-col img {
+    max-width: 100%; /* Ensure the image scales appropriately */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.title {
+    font-size: 1.2em; /* Adjust the size as needed */
+    
+}
+.heading{
+    font-size: 1.5em; 
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5%;
+}
